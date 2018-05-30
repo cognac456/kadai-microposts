@@ -8,6 +8,7 @@
         </div>
         <%= f.submit 'Post', class: 'btn btn-primary btn-block' %>
       <% end %>
+      <%= link_to "Favorite", likes_user_path(current_user), class: 'btn btn-default btn-block' %>
     </aside>
     <div class="col-xs-8">
       <%= render 'microposts/microposts', microposts: @microposts %>
